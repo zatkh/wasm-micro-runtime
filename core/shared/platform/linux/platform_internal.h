@@ -29,6 +29,18 @@
 #include <sys/mman.h>
 #include <netinet/in.h>
 
+
+static int debug = 1;
+
+#define debug_print(fmt, arg...)					\
+	do {							\
+		if (debug)					\
+			printf("%s: [%s]: " fmt ,	\
+			        "[debug_print]" , __FUNCTION__ , 	\
+				## arg);			\
+	} while (0)
+
+
 #ifdef __cplusplus
 extern "C" {
 #endif

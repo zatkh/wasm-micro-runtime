@@ -22,6 +22,7 @@ void mem_allocator_destroy(mem_allocator_t allocator)
 void *
 mem_allocator_malloc(mem_allocator_t allocator, uint32_t size)
 {
+    debug_print("\n");
     return gc_alloc_vo((gc_handle_t) allocator, size);
 }
 

@@ -47,7 +47,9 @@ enum {
     /* Memory allocator ems */
     MEM_ALLOCATOR_EMS = 0,
     /* Memory allocator tlsf */
-    MEM_ALLOCATOR_TLSF
+    MEM_ALLOCATOR_TLSF,
+    /* Memory allocator snmalloc */
+    MEM_ALLOCATOR_SNMALLOC
 };
 
 /* Default memory allocator */

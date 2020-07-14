@@ -962,6 +962,9 @@ int32
 wasm_runtime_module_malloc(WASMModuleInstanceCommon *module_inst, uint32 size,
                            void **p_native_addr)
 {
+
+        debug_print("\n");
+
 #if WASM_ENABLE_INTERP != 0
     if (module_inst->module_type == Wasm_Module_Bytecode)
         return wasm_module_malloc((WASMModuleInstance*)module_inst, size,

@@ -8,7 +8,7 @@ add_definitions(-DBH_PLATFORM_VERONA)
 include_directories(${PLATFORM_SHARED_DIR})
 include_directories(${PLATFORM_SHARED_DIR}/../include)
 
-include (${CMAKE_CURRENT_LIST_DIR}/../common/posix/platform_api_posix.cmake)
+#include (${CMAKE_CURRENT_LIST_DIR}/../common/posix/platform_api_posix.cmake)
 
 file (GLOB_RECURSE source_all ${PLATFORM_SHARED_DIR}/*.c)
 
